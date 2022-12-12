@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Realstore`,
@@ -19,7 +23,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "GTM-K4GTT8V",
+        id: process.env.GTM_ID,
         includeInDevelopment: false,
         defaultDataLayer: function () {
           return {
