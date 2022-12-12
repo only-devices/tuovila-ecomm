@@ -30,8 +30,8 @@ const IndexPage = () => {
       <Hero
         maxWidth={'500px'}
         image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
+        title={'Our store sells items!'}
+        subtitle={'Discover things you may or may not need'}
         ctaText={'shop now'}
         ctaAction={goToShop}
       />
@@ -39,7 +39,7 @@ const IndexPage = () => {
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
+          This is a demo site and is not real, created by{' '}
           <span className={styles.gold}>matter design.</span>
         </p>
         <p>

@@ -27,10 +27,10 @@ const Header = (prop) => {
   const [search, setSearch] = useState('');
 
   const searchRef = createRef();
-  const bannerMessage = 'Free shipping worldwide';
+  const bannerMessage = 'Free shipping worldwide, whatever, we don\'t care';
   const searchSuggestions = [
-    'Oversize sweaters',
-    'Lama Pajamas',
+    'Plush Snuggy',
+    'Grotesque Christmas sweater',
     'Candles Cinnamon',
   ];
 

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Sydney Ecommerce Theme`,
-    siteUrl: `https://jamm.matter.design`,
+    title: `Realstore`,
+    siteUrl: `https://shop.tuovila.com`,
   },
   plugins: [
     {
@@ -14,6 +14,24 @@ module.exports = {
         theme_color: `#ffffff`,
         display: `standalone`,
         icon: 'src/assets/favicon.png',
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-K4GTT8V",
+        includeInDevelopment: false,
+        defaultDataLayer: function () {
+          return {
+            pageType: window.pageType,
+          }
+        },
+        dataLayerName: 'dataLayer',
+        routeChangeEventName: "routeChangeEvent",
+        enableWebVitalsTracking: false,
+        // Specify optional GTM environment details.
+        //gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        //gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
       },
     },
     'gatsby-plugin-netlify',
